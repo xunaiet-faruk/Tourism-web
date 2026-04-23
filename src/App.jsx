@@ -1,11 +1,13 @@
 
 import './App.css'
 import Banner from './component/Banner'
+import FeaturesTour from './component/FeaturesTour'
 import Popular from './component/Popular'
 import TourismInfo from './component/TourismInfo'
+import TravelCarousel from './component/TravelCarousel'
 import Heading from './shared/Heading'
 
-function App() {
+function Home() {
   return (
    <>
       <div className='max-w-[1920px] mx-auto'>
@@ -13,10 +15,12 @@ function App() {
         <Banner/>
         <TourismInfo/>
         <Popular/>
+        <FeaturesTour/>
+        <TravelCarousel/>
       </div>
    
    </>
   )
 }
 
-export default App
+export default Home

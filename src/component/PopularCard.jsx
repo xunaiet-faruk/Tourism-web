@@ -5,14 +5,14 @@ const PopularCard = ({ item }) => {
     const { name, image, hours } = item;
 
     return (
-        <div className="border border-[#E4E6E8] font-[Manrope]  rounded-[28px] p-4 hover:shadow-lg transition duration-300">
+        <div className="border border-[#E4E6E8] h-[305px] font-[Manrope]  rounded-[28px] p-4 hover:shadow-lg transition duration-300">
 
             {/* Image */}
             <div className="rounded-[22px] overflow-hidden">
                 <img
                     src={image}
                     alt={name}
-                    className="w-full h-[305px] object-cover"
+                    className="w-full h-[199px] object-cover"
                 />
             </div>
 
