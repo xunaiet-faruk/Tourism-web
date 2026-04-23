@@ -5,6 +5,7 @@ import FeaturesTour from './component/FeaturesTour'
 import Popular from './component/Popular'
 import TourismInfo from './component/TourismInfo'
 import TravelCarousel from './component/TravelCarousel'
+import Footer from './shared/Footer'
 import Heading from './shared/Heading'
 
 function Home() {
@@ -17,6 +18,7 @@ function Home() {
         <Popular/>
         <FeaturesTour/>
         <TravelCarousel/>
+        <Footer/>
       </div>
    
    </>

@@ -87,52 +87,39 @@ const TravelCarousel = () => {
     };
 
     return (
-        <div className="w-full py-12 md:py-20 font-[Manrope] relative">
+        <div className="w-full py-12 md:py-20 font-[Manrope]">
 
-            {/* 🔥 LEFT ARROW (NO FUNCTION) */}
-            <button className="hidden sm:flex absolute left-2 md:left-6 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white shadow-md rounded-full w-10 h-10 items-center justify-center">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                    <path d="M15 18l-6-6 6-6" />
-                </svg>
-            </button>
+            <div className="max-w-[1280px] mx-auto px-4 relative">
 
-            {/* 🔥 RIGHT ARROW (NO FUNCTION) */}
-            <button className="hidden sm:flex absolute right-2 md:right-6 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white shadow-md rounded-full w-10 h-10 items-center justify-center">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                    <path d="M9 18l6-6-6-6" />
-                </svg>
-            </button>
-
-            <div className="max-w-[1280px] mx-auto px-4">
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {/* CARDS */}
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
                     {Info.map((item) => (
                         <div
                             key={item.id}
                             style={{ backgroundImage: `url(/${item.bg})` }}
-                            className={`relative bg-contain bg-no-repeat bg-center w-full h-[200px] sm:h-[220px] md:h-[232px] rounded-2xl overflow-hidden flex
-                            ${item.id === 1 ? 'justify-end' : 'justify-start'}
-                            ${item.id === 3 ? 'bg-white' : ''}`}
+                            className={`relative bg-contain bg-no-repeat bg-center w-full h-[232px] rounded-2xl overflow-hidden flex
+                        ${item.id === 1 ? 'justify-end' : 'justify-start'}
+                        ${item.id === 3 ? 'bg-white' : ''}`}
                         >
 
-                            <div className={`relative z-10 p-4 sm:p-5
-                                ${item.id === 1 ? 'text-right' : 'text-left'}
-                                ${item.id !== 1 ? 'text-black' : ''}`}>
+                            <div className={`relative z-10 p-5
+                            ${item.id === 1 ? 'text-right' : 'text-left'}
+                            ${item.id !== 1 ? 'text-black' : ''}`}>
 
-                                <div className="mt-6 sm:mt-10 md:mt-12">
+                                <div className="mt-12">
                                     {renderTitle(item)}
                                 </div>
 
                                 <button
-                                    className={`absolute bottom-4 sm:bottom-6 md:top-[170px] w-[110px] sm:w-[128px] h-[30px] sm:h-[32px] rounded-full text-white ${item.buttonColor} flex items-center justify-center gap-2 text-xs sm:text-sm
-                                    ${item.id === 1 ? 'left-[20px] sm:left-[40px] md:left-[62px]' : 'left-[20px]'}`}
+                                    className={`absolute top-[170px] w-[128.41px] h-[32px] rounded-full text-white ${item.buttonColor} flex items-center justify-center gap-2 text-sm
+                                ${item.id === 1 ? 'left-[62px]' : ''}`}
                                 >
                                     <span>View More</span>
 
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className="w-3 h-3 sm:w-4 sm:h-4"
+                                        className="w-4 h-4"
                                         viewBox="0 0 24 24"
                                         fill="none"
                                         stroke="currentColor"
@@ -147,6 +134,25 @@ const TravelCarousel = () => {
 
                         </div>
                     ))}
+
+                </div>
+
+                {/* ARROWS (NOW BELOW ON SMALL, SIDE ON LARGE) */}
+                <div className="flex justify-center lg:justify-between items-center mt-6 lg:mt-0 lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:w-full px-2">
+
+                    {/* LEFT */}
+                    <button className="bg-white/80 hover:bg-white shadow-md rounded-full w-10 h-10 flex items-center justify-center">
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+
+                    {/* RIGHT */}
+                    <button className="bg-white/80 hover:bg-white shadow-md rounded-full w-10 h-10 flex items-center justify-center">
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg>
+                    </button>
 
                 </div>
 
