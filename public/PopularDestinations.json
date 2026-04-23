@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Bali, Indonesia",
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+        "hours": "12 Hours"
+    },
+    {
+        "id": 2,
+        "name": "Paris, France",
+        "image": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a",
+        "hours": "8 Hours"
+    },
+    {
+        "id": 3,
+        "name": "Dubai, UAE",
+        "image": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade",
+        "hours": "10 Hours"
+    },
+    {
+        "id": 4,
+        "name": "Santorini, Greece",
+        "image": "https://images.unsplash.com/photo-1504609813442-a8924e83f76e",
+        "hours": "6 Hours"
+    },
+    {
+        "id": 5,
+        "name": "Tokyo, Japan",
+        "image": "https://images.unsplash.com/photo-1549692520-acc6669e2f0c",
+        "hours": "14 Hours"
+    },
+    {
+        "id": 6,
+        "name": "Maldives",
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+        "hours": "5 Hours"
+    },
+    {
+        "id": 7,
+        "name": "New York, USA",
+        "image": "https://images.unsplash.com/photo-1490578474895-699cd4e2cf59",
+        "hours": "9 Hours"
+    }
+]

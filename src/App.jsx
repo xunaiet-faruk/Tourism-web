@@ -1,14 +1,19 @@
 
 import './App.css'
-import Navbar from './shared/Navbar'
+import Banner from './component/Banner'
+import Popular from './component/Popular'
+import TourismInfo from './component/TourismInfo'
+import Heading from './shared/Heading'
 
 function App() {
   return (
    <>
-      <div className='w-480 mx-auto'>
-
-        <Navbar />
-</div>
+      <div className='max-w-[1920px] mx-auto'>
+        <Heading />
+        <Banner/>
+        <TourismInfo/>
+        <Popular/>
+      </div>
    
    </>
   )
