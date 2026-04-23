@@ -2,6 +2,7 @@
 import './App.css'
 import Banner from './component/Banner'
 import FeaturesTour from './component/FeaturesTour'
+import PaymentSection from './component/PaymentSection'
 import Popular from './component/Popular'
 import TourismInfo from './component/TourismInfo'
 import TravelCarousel from './component/TravelCarousel'
@@ -18,6 +19,7 @@ function Home() {
         <Popular/>
         <FeaturesTour/>
         <TravelCarousel/>
+        <PaymentSection/>
         <Footer/>
       </div>
    
