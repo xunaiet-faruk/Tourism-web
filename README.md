@@ -1,16 +1,53 @@
-# React + Vite
+# 🌍 Tour Management Frontend  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Live Demo  
+👉 https://tourmanagement-front-end.vercel.app  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📂 GitHub Repository  
+👉 https://github.com/xunaiet-faruk/Tourism-web  
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack  
+- React.js (Vite)  
+- Tailwind CSS  
+- Swiper.js  
+- React Icons  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features  
+- 📱 Fully responsive design (Mobile, Tablet, Desktop)  
+- 🎨 Pixel-perfect UI based on Figma design  
+- 🧩 Reusable and modular component structure  
+- 🎠 Interactive carousel using Swiper.js  
+- ⭐ Dynamic star-based rating system  
+- ⚡ Optimized performance and smooth UI experience  
+
+---
+
+## 📱 Responsiveness  
+- **Mobile:** Single card layout  
+- **Tablet:** Two cards layout  
+- **Desktop:** Three cards layout  
+
+---
+
+## 🧠 Assumptions  
+- Frontend-only implementation (no backend integration)  
+- Static data used for UI rendering  
+- Images and assets collected from the provided Figma design  
+
+---
+
+## ⚙️ Setup Instructions  
+
+### 1️⃣ Clone the repository  
+```bash
+git clone https://github.com/xunaiet-faruk/Tourism-web.git
+
+cd Tourism-web
+npm install
+npm run dev
