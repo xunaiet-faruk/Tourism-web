@@ -3,7 +3,7 @@ import { FaMapMarkerAlt, FaUserFriends } from "react-icons/fa";
 import { MdAccessTime } from "react-icons/md";
 
 const FeaturesTour = () => {
-    // Tour data array for cleaner code
+   
     const tours = [
         {
             id: 1,
@@ -40,7 +40,6 @@ const FeaturesTour = () => {
     return (
         <div className="py-[80px] md:py-[120px] font-[Manrope] container mx-auto px-4 sm:px-6 md:px-8">
 
-            {/* Header Section */}
             <div className="pb-8 md:pb-12 text-center sm:text-left">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-extrabold text-gray-900">
                     Our Featured Tours
@@ -50,14 +49,12 @@ const FeaturesTour = () => {
                 </p>
             </div>
 
-            {/* Grid with reduced gap */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6">
 
                 {tours.map((tour) => (
                     <div key={tour.id}
                         className="p-2 sm:p-3 hover:-translate-y-2 transition duration-300 group cursor-pointer">
 
-                        {/* Image Container - Responsive width */}
                         <div className="relative overflow-hidden">
                             <img
                                 src={tour.image}
@@ -67,7 +64,6 @@ const FeaturesTour = () => {
                                          group-hover:scale-105 transition duration-500"
                             />
 
-                            {/* Rating Badge */}
                             <div className="absolute top-3 sm:top-4 left-3 sm:left-4 bg-white 
                                           justify-center items-center flex 
                                           h-[28px] sm:h-[32px] w-[90px] sm:w-[111px] 
@@ -77,20 +73,19 @@ const FeaturesTour = () => {
                             </div>
                         </div>
 
-                        {/* Content Card - Responsive height and width */}
                         <div className="bg-white rounded-[20px] sm:rounded-[24px] 
                                       h-[auto] min-h-[220px] sm:min-h-[240px] lg:h-[243px] 
                                       w-full p-4 sm:p-5 md:p-6 
                                       -mt-10 sm:-mt-12 md:-mt-14 lg:-mt-16 
                                       relative z-10 border border-[#E4E6E8]">
 
-                            {/* Title */}
+                       
                             <h2 className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] 
                                          font-extrabold text-gray-900 leading-snug line-clamp-2">
                                 {tour.title}
                             </h2>
 
-                            {/* Location */}
+                      
                             <div className="flex items-center gap-2 text-[#737373] text-sm mt-2">
                                 <FaMapMarkerAlt className="text-[#737373] text-sm sm:text-base" />
                                 <span className="text-[13px] sm:text-[14px] md:text-[16px]">
@@ -98,7 +93,7 @@ const FeaturesTour = () => {
                                 </span>
                             </div>
 
-                            {/* Tour Info */}
+                       
                             <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-gray-500 text-sm mt-3">
                                 <div className="flex items-center gap-1">
                                     <MdAccessTime className="text-sm sm:text-base" />
@@ -115,7 +110,7 @@ const FeaturesTour = () => {
                                 </div>
                             </div>
 
-                            {/* Price & Button */}
+                           
                             <div className="flex items-center justify-between mt-4 sm:mt-5">
                                 <div>
                                     <span className="text-lg sm:text-xl font-bold text-gray-900">

@@ -7,7 +7,7 @@ const PopularCard = ({ item }) => {
     return (
         <div className="border border-[#E4E6E8] h-[305px] font-[Manrope]  rounded-[28px] p-4 hover:shadow-lg transition duration-300">
 
-            {/* Image */}
+      
             <div className="rounded-[22px] overflow-hidden">
                 <img
                     src={image}
@@ -16,7 +16,6 @@ const PopularCard = ({ item }) => {
                 />
             </div>
 
-            {/* Content */}
             <div className="mt-4 flex items-end justify-between">
 
                 <div>
@@ -28,7 +27,6 @@ const PopularCard = ({ item }) => {
                     </p>
                 </div>
 
-                {/* Arrow Button */}
                 <div className="bg-gray-200 hover:bg-gray-300 transition p-3 rounded-full cursor-pointer">
                     <FaArrowRight className="text-gray-700 text-sm" />
                 </div>

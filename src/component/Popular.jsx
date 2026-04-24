@@ -1,4 +1,3 @@
-// Alternative: Show all JSON cards + 1 special card at the end
 import React, { useEffect, useState } from 'react';
 import PopularCard from './PopularCard';
 import { FaArrowRight } from "react-icons/fa";
@@ -15,8 +14,8 @@ const Popular = () => {
     return (
         <div className='py-12 sm:py-16 md:py-20 lg:py-[146px] font-[Manrope] container mx-auto px-4 sm:px-6 md:px-8'>
 
-            <div className='pb-8 sm:pb-10 md:pb-12'>
-                <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-extrabold text-gray-900'>
+            <div className='pb-8 sm:pb-10 md:pb-12 text-center sm:text-left'>
+                <h1 className='text-3xl sm:text-4xl md:text-5xl  lg:text-[52px] font-extrabold text-gray-900'>
                     Popular Destinations
                 </h1>
                 <p className='text-base sm:text-lg md:text-[20px] text-[#737373] mt-2'>
